@@ -6,6 +6,7 @@ $(document).ready(function () {
   var timeOut // must declare?
   var speed  // must declare?
   var topScore = 0 // topScore = hits?
+  var darthSound
   // var darthStop
 
   // make darth vader appear on random box
@@ -15,7 +16,7 @@ $(document).ready(function () {
     $('.box').eq(x).addClass('darth')
   // $('.box.darth').one('click', killDarth)
     $('.box').off()
-    $('.box.darth').on('click', killDarth)
+    $('.box.darth').one('click', killDarth)
     clearInterval(darthAppear)
     darthAppear = setInterval(darthFunction, gameSpeed)
   }
@@ -32,6 +33,7 @@ $(document).ready(function () {
     hits = 0
     time = 45
     gameSpeed = 1000
+    darthSound()
     speed = setInterval(darthSpeed, 500)
     darthAppear = setInterval(darthFunction, gameSpeed)
     timeOut = setInterval(gameTime, 1000)
@@ -44,11 +46,12 @@ $(document).ready(function () {
     clearInterval(speed)
     $('.box').removeClass('darth')
     $('.time').text('Time: 0s')
-    $('.hits').text('Hits: 0')
+    // $('.hits').text('Hits: 0')
   }
   // timer
   function gameTime () {
     $('.time').text('Time: ' + time-- + 's')
+
     if (time < 0) {
       if (hits > topScore) {
         topScore = hits
@@ -65,5 +68,10 @@ $(document).ready(function () {
   // speed = setInterval(darthSpeed, 500)
   function darthSpeed () {
     gameSpeed = gameSpeed - 7
+  }
+  function darthSound () {
+    var x = new Audio('http://www.digitpress.com/dpsoundz/mp3/dp_starwars_darkside.mp3')
+    x.loop = true
+    x.play()
   }
 })

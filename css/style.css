@@ -1,6 +1,6 @@
 body{
   /*background-color: blue;*/
-  background: linear-gradient(270deg, #ff0000, #e9ce4c, #4c8ae9);
+  background: linear-gradient(270deg, #029872, #e5a662, #8b62e5);
   background-size: 600% 600%;
 
   -webkit-animation: AnimationName 30s ease infinite;
@@ -23,10 +23,6 @@ body{
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-
-
-
-
 /*p{
   text-align: center;
   color: black;
@@ -105,7 +101,7 @@ body{
   margin-top: : 5px
   font-size: 0;
   display: inline-block;
-  background-color: green;
+  /*background-color: green;*/
   /*position: relative;*/
 }
 
@@ -117,7 +113,7 @@ body{
   /*margin-top: : 5px*/
   /*font-size: 0;*/
   display: inline-block;
-  background-color: purple;
+  /*background-color: purple;*/
   /*position: relative;*/
   /*z-index: -50;*/
 }
@@ -130,19 +126,20 @@ body{
   /*margin-top: : 5px*/
   /*font-size: 0;*/
   display: inline-block;
-  background-color: green;
+  /*background-color: green;*/
   /*position: relative;*/
 }
 
 .divTime {
   width: 274px;
   height:130px;
+  border-radius: 10px;
   /*margin: 0 auto;*/
   /*top: 40px;*/
   /*margin-top: : 5px*/
   /*font-size: 0;*/
   display: inline-block;
-  background-color: red;
+  background-color: rgba(0,0,0,0.7);
   position: relative;
   /*z-index: -100;*/
 }
@@ -150,30 +147,34 @@ body{
 .divHits {
   width: 274px;
   height:130px;
+  border-radius: 10px;
   /*margin: 0 auto;*/
   /*top: 40px;*/
   /*margin-top: : 5px*/
   /*font-size: 0;*/
   float:right;
   display: inline-block;
-  background-color: black;
+background-color: rgba(0,0,0,0.7);
   /*position: relative;*/
 }
 
 .hits{
 color: white;
-font-size: 25px;
+font-family: 'Baloo Bhai', cursive;
+font-size: 23px;
 text-align: center;
 }
 
 .topScore{
 color: white;
-font-size: 25px;
+font-family: 'Baloo Bhai', cursive;
+font-size: 23px;
 text-align: center;
 }
 
 .time{
 color: white;
+font-family: 'Baloo Bhai', cursive;
 height: 100px;
 width: 274px;
 font-size: 40px;
@@ -183,18 +184,30 @@ position: absolute;
 }
 
 h1{
-color: white;
+color: red;
+font-family: 'Baloo Bhai', cursive;
 font-size: 50px;
 text-align: center;
 }
 
 button{
-  width: 100px;
-  height:30px;
+  /*width: 262px;
+  height:40px;
   text-align: center;
-  color: black;
-  margin: 0 auto;
-  position: relative;
+  color: black;*/
+  margin: 0 2px;
+  /*position: relative;*/
+  border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:12px 110px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
 }
 
 .box{

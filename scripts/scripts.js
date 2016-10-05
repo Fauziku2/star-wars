@@ -33,7 +33,7 @@ $(document).ready(function () {
     hits = 0
     time = 45
     gameSpeed = 1000
-    darthSound()
+    // darthSound()
     speed = setInterval(darthSpeed, 500)
     darthAppear = setInterval(darthFunction, gameSpeed)
     timeOut = setInterval(gameTime, 1000)
@@ -69,9 +69,9 @@ $(document).ready(function () {
   function darthSpeed () {
     gameSpeed = gameSpeed - 7
   }
-  function darthSound () {
-    var x = new Audio('http://www.digitpress.com/dpsoundz/mp3/dp_starwars_darkside.mp3')
-    x.loop = true
-    x.play()
-  }
+  // function darthSound () {
+  //   var x = new Audio('http://www.digitpress.com/dpsoundz/mp3/dp_starwars_darkside.mp3')
+  //   x.loop = true
+  //   x.play()
+  // }
 })

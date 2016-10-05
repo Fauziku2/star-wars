@@ -213,13 +213,17 @@ button{
 .box{
   width: 205px;
   height: 205px;
+  border-radius:6px;
   display: inline-block;
   position: relative;
   float: left;
   cursor: pointer;
 }
 .box:hover {
-  background-color: grey;
+  background-color: rgba(0,0,0,0.7);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 1);
+-moz-box-shadow:    0px 0px 30px 0px rgba(255, 255, 255, 1);
+box-shadow:         0px 0px 30px 0px rgba(255, 255, 255, 1);
 }
 
 .box.darth {

@@ -28,7 +28,7 @@ $(document).ready(function () {
     $('.box').off()
   }
   // start game
-  $('.start').on('click', startGame)
+  $('.start').one('click', startGame)
   function startGame () {
     hits = 0
     time = 45
@@ -41,6 +41,7 @@ $(document).ready(function () {
   // stop the game
   $('.stop').on('click', darthStop)
   function darthStop () {
+    $('.start').one('click', startGame)
     clearInterval(darthAppear)
     clearInterval(timeOut)
     clearInterval(speed)

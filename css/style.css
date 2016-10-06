@@ -121,7 +121,11 @@ body{
 
 .bottom2 {
   width: 550px;
+<<<<<<< HEAD
   height:50px;
+=======
+  height:49px;
+>>>>>>> master
   /*margin: 0 auto;*/
   /*top: 40px;*/
   /*margin-top: : 5px*/
@@ -141,6 +145,25 @@ body{
   display: inline-block;
   background-color: rgba(0,0,0,0.7)
   /*position: relative;*/
+}
+.bottom3 p{
+  color: red;
+  font-family: 'Baloo Bhai', cursive;
+}
+.bottom li{
+  color:white;
+  font-family: 'Baloo Bhai', cursive;
+}
+
+.bottom3 {
+  width: 550px;
+  height:150px;
+  /*margin: 0 auto;*/
+  display: inline-block;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 10px;
+  /*background-color: green;*/
+
 }
 .bottom3 p{
   color: red;
@@ -234,6 +257,7 @@ button{
 .box{
   width: 205px;
   height: 205px;
+  border-radius:6px;
   display: inline-block;
   position: relative;
   border-radius: 6px;
@@ -244,8 +268,13 @@ button{
 .box:hover {
   background-color: rgba(0,0,0,0.7);
   -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 1);
+<<<<<<< HEAD
   -moz-box-shadow:    0px 0px 30px 0px rgba(255, 255, 255, 1);
   box-shadow:         0px 0px 30px 0px rgba(255, 255, 255, 1);
+=======
+-moz-box-shadow:    0px 0px 30px 0px rgba(255, 255, 255, 1);
+box-shadow:         0px 0px 30px 0px rgba(255, 255, 255, 1);
+>>>>>>> master
 }
 
 .box.darth {

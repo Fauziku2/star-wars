@@ -7,8 +7,6 @@ $(document).ready(function () {
   var speed  // must declare?
   var topScore = 0 // topScore = hits?
   var condition = false
-  // var darthSound
-  // var darthStop
   // make darth vader appear on random box
   function darthFunction () {
     var x = Math.floor(Math.random() * 9)
